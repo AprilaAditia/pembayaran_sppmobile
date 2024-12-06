@@ -5,6 +5,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 import 'package:pembayaran_sppmobile/app/data/login_provider.dart';
 import 'package:pembayaran_sppmobile/app/routes/app_pages.dart';
+import 'package:sp_util/sp_util.dart';
 
 class LoginController extends GetxController {
   TextEditingController txtEmail = TextEditingController();
@@ -29,13 +30,12 @@ class LoginController extends GetxController {
       };
       LoginProvider().auth(data).then((Value) {
         if (Value.statusCode == 200) {
-          Get.snackbar(
-            "Success",
-            "Login Berhasil",
-            backgroundColor: Colors.green,
-            colorText: Colors.white,
-          );
-          /*Get.offAllNamed(Routes.MAIN_MENU);*/
+          var responseBody = Value.body;
+          var data = responseBody["user"];
+          SpUtil.putString('name', data["name"]);
+          SpUtil.putString('token', data["token"]);
+          SpUtil.putBool('isLogin', true);
+          Get.offAllNamed(Routes.MAIN_MENU);
         } else {
           Get.snackbar(
             "Error",
