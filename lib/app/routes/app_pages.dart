@@ -8,6 +8,8 @@ import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
 import '../modules/tagihan/bindings/tagihan_binding.dart';
 import '../modules/tagihan/views/tagihan_view.dart';
+import '../modules/tagihan_detail/bindings/tagihan_detail_binding.dart';
+import '../modules/tagihan_detail/views/tagihan_detail_view.dart';
 
 part 'app_routes.dart';
 
@@ -36,6 +38,11 @@ class AppPages {
       name: _Paths.TAGIHAN,
       page: () => const TagihanView(),
       binding: TagihanBinding(),
+    ),
+    GetPage(
+      name: _Paths.TAGIHAN_DETAIL,
+      page: () => const TagihanDetailView(),
+      binding: TagihanDetailBinding(),
     ),
   ];
 }

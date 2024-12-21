@@ -209,13 +209,13 @@ class MainMenuView extends GetView<MainMenuController> {
                                       ),
                                       child: Center(
                                         child: Icon(
-                                          Icons.payment,
+                                          Icons.info_outline,
                                           size: 30,
                                           color: Colors.blue,
                                         ),
                                       ),
                                     ),
-                                    Text("PEMBAYARAN")
+                                    Text("INFORMASI")
                                   ],
                                 ),
                               ),

@@ -1,12 +1,10 @@
-// ignore_for_file: unused_local_variable
+// ignore_for_file: unused_local_variable, unnecessary_brace_in_string_interps
 
 import 'package:get/get.dart';
+import 'package:pembayaran_sppmobile/app/data/base_provider.dart';
 
-class LoginProvider extends GetConnect {
+class LoginProvider extends BaseProvider {
   Future<Response> auth(var data) {
-    var myHeader = {
-      'Accept': 'application/json',
-    };
-    return post('http://192.168.1.102:8000/api/login', data, headers: myHeader);
+    return post('$myHttpServer/login', data, headers: myHttpHeader);
   }
 }
