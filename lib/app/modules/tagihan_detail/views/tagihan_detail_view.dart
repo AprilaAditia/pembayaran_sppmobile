@@ -119,7 +119,8 @@ class TagihanDetailView extends GetView<TagihanDetailController> {
                         child: Column(
                           children: [
                             ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () => controller.onTapPilihMetodeBayar(
+                                  'transfer', controller.itemTagihan),
                               child: Text(
                                 ' Pembayaran Transfer ',
                                 style: TextStyle(
@@ -135,7 +136,8 @@ class TagihanDetailView extends GetView<TagihanDetailController> {
                             ),
                             SizedBox(height: 10),
                             ElevatedButton(
-                              onPressed: () {},
+                              onPressed: () => controller.onTapPilihMetodeBayar(
+                                  'virtual-account', controller.itemTagihan),
                               child: Text(
                                 ' Rekening Virtual ',
                                 style: TextStyle(

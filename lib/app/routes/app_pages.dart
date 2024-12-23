@@ -4,6 +4,8 @@ import '../modules/MainMenu/bindings/main_menu_binding.dart';
 import '../modules/MainMenu/views/main_menu_view.dart';
 import '../modules/banksekolah_index/bindings/banksekolah_index_binding.dart';
 import '../modules/banksekolah_index/views/banksekolah_index_view.dart';
+import '../modules/formpembayaran_index/bindings/formpembayaran_index_binding.dart';
+import '../modules/formpembayaran_index/views/formpembayaran_index_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -50,6 +52,11 @@ class AppPages {
       name: _Paths.BANKSEKOLAH_INDEX,
       page: () => const BanksekolahIndexView(),
       binding: BanksekolahIndexBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORMPEMBAYARAN_INDEX,
+      page: () => const FormpembayaranIndexView(),
+      binding: FormpembayaranIndexBinding(),
     ),
   ];
 }

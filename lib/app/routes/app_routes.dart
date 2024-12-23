@@ -9,6 +9,7 @@ abstract class Routes {
   static const TAGIHAN = _Paths.TAGIHAN;
   static const TAGIHAN_DETAIL = _Paths.TAGIHAN_DETAIL;
   static const BANKSEKOLAH_INDEX = _Paths.BANKSEKOLAH_INDEX;
+  static const FORMPEMBAYARAN_INDEX = _Paths.FORMPEMBAYARAN_INDEX;
 }
 
 abstract class _Paths {
@@ -19,4 +20,5 @@ abstract class _Paths {
   static const TAGIHAN = '/tagihan';
   static const TAGIHAN_DETAIL = '/tagihan-detail';
   static const BANKSEKOLAH_INDEX = '/banksekolah-index';
+  static const FORMPEMBAYARAN_INDEX = '/formpembayaran-index';
 }

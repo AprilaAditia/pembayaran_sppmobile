@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:pembayaran_sppmobile/app/routes/app_pages.dart';
 
 class TagihanDetailController extends GetxController {
   //TODO: Implement TagihanDetailController
@@ -18,6 +19,12 @@ class TagihanDetailController extends GetxController {
   @override
   void onClose() {
     super.onClose();
+  }
+
+  void onTapPilihMetodeBayar(var metode, var item) {
+    if (metode == 'transfer') {
+      Get.toNamed(Routes.BANKSEKOLAH_INDEX, arguments: item);
+    }
   }
 
   void increment() => count.value++;
