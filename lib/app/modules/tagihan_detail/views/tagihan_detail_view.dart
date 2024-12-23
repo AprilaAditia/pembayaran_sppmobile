@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: avoid_unnecessary_containers, prefer_const_constructors, sized_box_for_whitespace, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 
@@ -103,6 +103,55 @@ class TagihanDetailView extends GetView<TagihanDetailController> {
                           fontWeight: FontWeight.normal,
                         ),
                       ),
+                      SizedBox(height: 10),
+                      Container(
+                        margin: EdgeInsets.only(left: 2, right: 10, bottom: 10),
+                        child: Text(
+                          ' Metode Pembayaran ',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        child: Column(
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text(
+                                ' Pembayaran Transfer ',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(Get.width, 40),
+                                backgroundColor:
+                                    Color.fromARGB(255, 7, 14, 142),
+                              ),
+                            ),
+                            SizedBox(height: 10),
+                            ElevatedButton(
+                              onPressed: () {},
+                              child: Text(
+                                ' Rekening Virtual ',
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 16,
+                                ),
+                              ),
+                              style: ElevatedButton.styleFrom(
+                                fixedSize: Size(Get.width, 40),
+                                backgroundColor:
+                                    Color.fromARGB(255, 7, 14, 142),
+                              ),
+                            ),
+                          ],
+                        ),
+                      )
                     ],
                   ),
                 )

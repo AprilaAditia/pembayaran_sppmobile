@@ -2,6 +2,8 @@ import 'package:get/get.dart';
 
 import '../modules/MainMenu/bindings/main_menu_binding.dart';
 import '../modules/MainMenu/views/main_menu_view.dart';
+import '../modules/banksekolah_index/bindings/banksekolah_index_binding.dart';
+import '../modules/banksekolah_index/views/banksekolah_index_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -43,6 +45,11 @@ class AppPages {
       name: _Paths.TAGIHAN_DETAIL,
       page: () => const TagihanDetailView(),
       binding: TagihanDetailBinding(),
+    ),
+    GetPage(
+      name: _Paths.BANKSEKOLAH_INDEX,
+      page: () => const BanksekolahIndexView(),
+      binding: BanksekolahIndexBinding(),
     ),
   ];
 }

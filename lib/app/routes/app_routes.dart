@@ -8,6 +8,7 @@ abstract class Routes {
   static const MAIN_MENU = _Paths.MAIN_MENU;
   static const TAGIHAN = _Paths.TAGIHAN;
   static const TAGIHAN_DETAIL = _Paths.TAGIHAN_DETAIL;
+  static const BANKSEKOLAH_INDEX = _Paths.BANKSEKOLAH_INDEX;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const MAIN_MENU = '/main-menu';
   static const TAGIHAN = '/tagihan';
   static const TAGIHAN_DETAIL = '/tagihan-detail';
+  static const BANKSEKOLAH_INDEX = '/banksekolah-index';
 }
