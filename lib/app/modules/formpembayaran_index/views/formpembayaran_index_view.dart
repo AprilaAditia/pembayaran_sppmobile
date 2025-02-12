@@ -56,7 +56,7 @@ class FormpembayaranIndexView extends GetView<FormpembayaranIndexController> {
               ElevatedButton(
                 onPressed: () {},
                 child: const Text(
-                  "Lakukan Pembayaran",
+                  "Konfirmasi Pembayaran",
                   style: TextStyle(color: Colors.white),
                 ),
                 style: ElevatedButton.styleFrom(
