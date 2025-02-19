@@ -25,7 +25,7 @@ class HomeView extends GetView<HomeController> {
         elevation: 0,
         backgroundColor: Colors.white,
         title: const Text(
-          'SEKOLAH ALAM INDRAMAYU',
+          'PEMBAYARAN SPP',
           style: TextStyle(
             color: Colors.black,
             fontWeight: FontWeight.bold,
@@ -54,7 +54,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 SizedBox(height: 20),
                 Text(
-                  "Selamat Datang di Aplikasi Pembayaran \n        SPP Sekolah Alam Indramayu",
+                  "Selamat Datang di Aplikasi Pembayaran \n        Sumbangan Pembangunan Pendidikan",
                   style: TextStyle(
                     color: Colors.black54,
                     fontFamily: 'Roboto',

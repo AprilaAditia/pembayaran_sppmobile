@@ -24,7 +24,7 @@ class LoginView extends GetView<LoginController> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Halo Wali Murid! 👋",
+                "Halo User! 👋",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 30,
@@ -32,7 +32,7 @@ class LoginView extends GetView<LoginController> {
               ),
               SizedBox(height: 10),
               Text(
-                "Selamat Datang Di Aplikasi SPP Sekolah Alam",
+                "Selamat Datang Di Aplikasi Pembayaran Sumbangan Pembangunan Pendidikan",
                 style: TextStyle(
                   color: Colors.black54,
                 ),
